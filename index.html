@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#8c5d50">
+  <title>Grand Slam Tennis</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="game">
+    <canvas id="court" aria-label="Tennis court game"></canvas>
+
+    <div id="hud">
+      <section class="player-card player-left">
+        <span class="player-tag">P1</span>
+        <div class="score-name"><span>YOU</span><strong id="scoreLeft">0</strong></div>
+      </section>
+      <section class="match-info">
+        <span id="setText">SET 1</span>
+        <strong id="statusText">READY</strong>
+      </section>
+      <section class="player-card player-right">
+        <div class="score-name"><span>CPU</span><strong id="scoreRight">0</strong></div>
+        <span class="player-tag">COM</span>
+      </section>
+    </div>
+
+    <button id="startButton" type="button"><span>Start Match</span></button>
+
+    <aside id="controls" aria-label="Controls">
+      <div class="control"><b>W A S D</b><span>Move</span></div>
+      <div class="control"><b>SPACE</b><span>Swing</span></div>
+      <div class="control"><b>← →</b><span>Direction</span></div>
+    </aside>
+
+    <div id="mobileControls">
+      <div id="stick" aria-label="Movement joystick"><i></i></div>
+      <button id="swingButton" type="button" aria-label="Swing">SWING</button>
+    </div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
